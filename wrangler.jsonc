@@ -1,12 +1,19 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "portfolio",
+  "main": "src/index.js",
   "compatibility_date": "2026-10-01",
+  "workers_dev": false,
   "assets": {
     "directory": "./public",
+    "binding": "ASSETS",
     "html_handling": "auto-trailing-slash",
-    "not_found_handling": "404-page"
-  }
-  // Custom domain is added here once DNS is on Cloudflare:
-  // "routes": [{ "pattern": "jamesburrow.com", "custom_domain": true }]
+    "not_found_handling": "404-page",
+    // Run the redirect check before assets are served
+    "run_worker_first": true
+  },
+  "routes": [
+    { "pattern": "jamesburrow.com", "custom_domain": true },
+    { "pattern": "www.jamesburrow.com", "custom_domain": true }
+  ]
 }
