@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>James Burrow | Search Visibility Leader &amp; AI Builder</title>
-  <meta name="description" content="James Burrow has spent 20 years in search and digital marketing. These days he leads SEO strategy for multi-location brands and builds AI tools for his team, mostly in Claude.">
+  <title>James Burrow | SEO, GEO &amp; AIO Strategist and AI Builder</title>
+  <meta name="description" content="20 years in search. James Burrow leads SEO, GEO and AIO strategy for multi-location brands and builds the AI tools SEO teams use every day, mostly in Claude.">
   <link rel="canonical" href="https://jamesburrow.com/">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="James Burrow | Search Visibility Leader &amp; AI Builder">
-  <meta property="og:description" content="20 years in search. Now building the AI tools that run it.">
+  <meta property="og:title" content="James Burrow | SEO, GEO &amp; AIO Strategist and AI Builder">
+  <meta property="og:description" content="20 years in search. Now I build the AI tools SEO teams use every day.">
   <meta property="og:url" content="https://jamesburrow.com/">
   <meta property="og:image" content="https://jamesburrow.com/img/profile.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,15 +18,53 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "James Burrow",
-    "url": "https://jamesburrow.com/",
-    "image": "https://jamesburrow.com/img/profile.jpg",
-    "jobTitle": "Lead Strategist, Search Experience",
-    "worksFor": { "@type": "Organization", "name": "Coalmarch" },
-    "address": { "@type": "PostalAddress", "addressLocality": "Fuquay-Varina", "addressRegion": "NC", "addressCountry": "US" },
-    "knowsAbout": ["Technical SEO", "Local SEO", "Generative Engine Optimization", "Multi-location site architecture", "Claude", "Custom GPTs", "AI workflow development", "Prompt engineering"],
-    "sameAs": ["https://www.linkedin.com/in/jamesburrow", "https://github.com/jburrow-dev"]
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "@id": "https://jamesburrow.com/#profilepage",
+        "url": "https://jamesburrow.com/",
+        "name": "James Burrow | SEO, GEO & AIO Strategist and AI Builder",
+        "inLanguage": "en-US",
+        "isPartOf": { "@id": "https://jamesburrow.com/#website" },
+        "mainEntity": { "@id": "https://jamesburrow.com/#person" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://jamesburrow.com/#website",
+        "url": "https://jamesburrow.com/",
+        "name": "James Burrow",
+        "publisher": { "@id": "https://jamesburrow.com/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://jamesburrow.com/#person",
+        "name": "James Burrow",
+        "url": "https://jamesburrow.com/",
+        "image": "https://jamesburrow.com/img/profile.jpg",
+        "description": "SEO strategist with 20 years in search and digital marketing who builds AI tools for SEO teams.",
+        "jobTitle": "Lead Strategist, Search Experience",
+        "worksFor": { "@type": "Organization", "name": "Coalmarch" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Fuquay-Varina", "addressRegion": "NC", "addressCountry": "US" },
+        "knowsAbout": ["Search Engine Optimization", "Technical SEO", "Local SEO", "Generative Engine Optimization (GEO)", "AI Optimization (AIO)", "Google AI Overviews", "Multi-location site architecture", "Claude", "Custom GPTs", "AI workflow development", "Prompt engineering"],
+        "sameAs": ["https://www.linkedin.com/in/jamesburrow", "https://github.com/jburrow-dev"]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://porchlightscore.com/#organization",
+        "name": "Porchlight Local Search",
+        "alternateName": "Porchlight",
+        "url": "https://porchlightscore.com/",
+        "founder": { "@id": "https://jamesburrow.com/#person" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "BroodLink",
+        "url": "https://broodlink.app/",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "Web",
+        "creator": { "@id": "https://jamesburrow.com/#person" }
+      }
+    ]
   }
   </script>
 </head>
@@ -36,7 +74,7 @@
       <a href="#top" class="brand">James Burrow</a>
       <nav aria-label="Sections">
         <a href="#projects">AI work</a>
-        <a href="#results">Results</a>
+        <a href="#side-projects">Side projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact" class="btn btn-sm">Contact</a>
       </nav>
@@ -49,8 +87,8 @@
            onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'avatar avatar-ph',textContent:'JB'}))">
       <div>
         <p class="eyebrow">Search Visibility Leader · AI Builder</p>
-        <h1>20 years in search. Now building the AI tools that run it.</h1>
-        <p class="lede">I lead search strategy for franchise and home services brands. Most of my time goes to technical SEO and site architecture for multi-location businesses, and lately to figuring out how AI answer engines decide who to cite. I also build the AI tools my team uses every day, mostly in Claude.</p>
+        <h1>20 years in search. Now I build the AI tools SEO teams use every day.</h1>
+        <p class="lede">I lead search strategy for franchise and home services brands. Most of my time goes to technical SEO and site architecture for multi-location businesses. More and more of it goes to GEO and AIO, which is really about getting a brand cited when people ask AI for an answer instead of searching. The tools I build, mostly in Claude, are how my team keeps up with both.</p>
         <div class="actions">
           <a class="btn" href="#contact">Get in touch</a>
           <a class="btn btn-ghost" href="/files/james-burrow-resume.pdf" download>Download resume</a>
@@ -63,7 +101,7 @@
       <p class="section-sub">These are some of my favorite builds from my current role. I've made a lot more than what's here, plus a few custom GPTs, but Claude is my main tool. Most of these pull live data and check their own numbers before anything reaches a client.</p>
       <div class="grid">
         <article class="card">
-          <p class="tag">Generative search</p>
+          <p class="tag">GEO · AIO</p>
           <h3>AI Visibility Report</h3>
           <p>Combines AI citation data from Bing Webmaster and Search Console with our visibility tracking, then turns it into an internal analysis and a client-ready summary. No visibility percentage makes it into a client deck until the confidence checks pass.</p>
           <ul class="stack"><li>GEO</li><li>Bing Webmaster</li><li>Search Console</li></ul>
@@ -144,14 +182,24 @@
       </details>
     </section>
 
-    <section id="results" class="section wrap">
-      <h2>Search results</h2>
-      <p class="section-sub">A few numbers from in-house and agency roles.</p>
-      <div class="metrics">
-        <div class="metric"><strong>+24%</strong><span>year-over-year organic traffic from technical SEO on Shopify</span><em>Plant Delights Nursery</em></div>
-        <div class="metric"><strong>+34%</strong><span>mobile checkouts after reworking the product and checkout pages</span><em>Plant Delights Nursery</em></div>
-        <div class="metric"><strong>+54%</strong><span>traffic growth across a network of 25 retail sites</span><em>Internet Alliance</em></div>
-        <div class="metric"><strong>$150k+</strong><span>monthly PPC spend managed, with costs down 4% while traffic quality went up</span><em>Internet Alliance</em></div>
+    <section id="side-projects" class="section wrap">
+      <h2>Side projects</h2>
+      <p class="section-sub">Two products I'm building on my own time. Both are live.</p>
+      <div class="grid grid-2">
+        <article class="card">
+          <p class="tag">Local search · Founder</p>
+          <h3>Porchlight</h3>
+          <p>A free local visibility report for home services businesses. Look up a business and Porchlight shows where it ranks on Google Maps across its service area, how its profile and reviews compare with the competitors beating it, and whether AI assistants recommend it. Paid plans keep checking daily and use AI to draft review replies.</p>
+          <ul class="stack"><li>Local SEO</li><li>Map rank grids</li><li>AI visibility</li><li>Census data</li></ul>
+          <a class="card-link" href="https://porchlightscore.com/">porchlightscore.com</a>
+        </article>
+        <article class="card">
+          <p class="tag">Beekeeping · Builder</p>
+          <h3>BroodLink</h3>
+          <p>Apiary software for beekeeping nerds. You log a hive inspection by voice, and BroodLink suggests the next procedure step by step, with every recommendation tied back to university extension research. Optional Raspberry Pi and Pico sensor nodes track temperature, humidity and hive weight. It's free for hobbyist beekeepers.</p>
+          <ul class="stack"><li>Python</li><li>Flask</li><li>Raspberry Pi</li><li>MQTT</li></ul>
+          <a class="card-link" href="https://broodlink.app/">broodlink.app</a>
+        </article>
       </div>
     </section>
 

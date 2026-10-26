@@ -3,6 +3,9 @@ const CANONICAL_HOST = "jamesburrow.com";
 
 export default {
   async fetch(request, env) {
+    // `wrangler dev` rewrites local requests to http://jamesburrow.com, so skip redirects there.
+    if (env.LOCAL_DEV) return env.ASSETS.fetch(request);
+
     const url = new URL(request.url);
     if (url.hostname === `www.${CANONICAL_HOST}` || url.protocol === "http:") {
       url.hostname = CANONICAL_HOST;
